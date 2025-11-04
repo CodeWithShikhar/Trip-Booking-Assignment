@@ -1,0 +1,53 @@
+.my-bookings-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.page-content {
+  flex: 1;
+  padding: 80px 20px;
+  background-color: #f9fafb;
+}
+
+.page-content h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #111827;
+}
+
+.past-bookings-title {
+  margin-top: 60px;
+}
+
+.bookings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.no-bookings {
+  text-align: center;
+  color: #6b7280;
+  font-size: 16px;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding: 40px 20px;
+  }
+
+  .page-content h1 {
+    font-size: 24px;
+  }
+
+  .bookings-grid {
+    grid-template-columns: 1fr;
+  }
+}
